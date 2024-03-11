@@ -43,3 +43,6 @@ The template "BepInEx 5 Plugin Template" was created successfully.
 ## developing 
 
 per https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/4_configuration.html
+
+https://github.com/icsharpcode/AvaloniaILSpy/releases
+ILSpy /home/kevinh/.nuget/packages/dysonsphereprogram.gamelibs/0.10.29.21950-r.0/lib/netstandard2.0/Assembly-CSharp.dll

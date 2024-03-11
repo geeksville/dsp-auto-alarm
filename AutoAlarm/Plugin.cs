@@ -1,5 +1,6 @@
 ﻿using BepInEx;
 using BepInEx.Configuration;
+using HarmonyLib;
 
 namespace AutoAlarm
 {
@@ -18,6 +19,13 @@ namespace AutoAlarm
 
             autoExtractors = Config.Bind("DefaultAlarms", "autoExtractor", true,
                 "Default to having alarm on");
+
+            Harmony.CreateAndPatchAll(typeof(Plugin));
+        }
+
+        [HarmonyPostfix, HarmonyPatch(typeof(PlanetTransport), nameof(PlanetTransport.NewStationComponent))]
+        public static void NewStationComponent_PostFix(PlanetTransport __instance, int _entityId, int _pcId, PrefabDesc _desc)
+        {
         }
     }
 }
