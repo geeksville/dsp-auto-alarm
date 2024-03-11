@@ -1,0 +1,7 @@
+{
+    "name": "AutoAlarm",
+    "description": "AutoAlarm provides customizable default alarm states for buildings",
+    "version_number": "0.1.0",
+    "dependencies": [],
+    "website_url": "https://github.com/geeksville/dsp-auto-alarm"
+}
