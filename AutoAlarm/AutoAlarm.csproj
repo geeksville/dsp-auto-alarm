@@ -11,7 +11,7 @@
 
   <ItemGroup>
     <PackageReference Include="BepInEx.Analyzers" Version="1.*" PrivateAssets="all" />
-    <PackageReference Include="BepInEx.Core" Version="5.*" />
+    <PackageReference Include="BepInEx.Core" Version="5.4.17.0" />
     <PackageReference Include="BepInEx.PluginInfoProps" Version="1.*" />
     <PackageReference Include="DysonSphereProgram.GameLibs" Version="*-*" />
     <PackageReference Include="UnityEngine.Modules" Version="2018.4.12" IncludeAssets="compile" />
@@ -20,9 +20,8 @@
   <ItemGroup Condition="'$(TargetFramework.TrimEnd(`0123456789`))' == 'net'">
     <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
   </ItemGroup>
-  <!-- FIXME: not cross platform / disabling temporarily
+  <!-- FIXME: not cross platform / disabling temporarily -->
   <PropertyGroup>
-    <PostBuildEvent>COPY $(TargetPath) "G:\SteamLibrary\steamapps\common\Dyson Sphere Program\BepInEx\plugins"</PostBuildEvent>
+    <PostBuildEvent>cp /home/kevinh/development/dyson-sphere-program/dsp-auto-alarm/AutoAlarm/bin/Debug/netstandard2.0/AutoAlarm.dll "/mnt/deck/.config/r2modmanPlus-local/DysonSphereProgram/profiles/Default/BepInEx/plugins/AutoAlarm"</PostBuildEvent>
   </PropertyGroup>
-  -->  
 </Project>

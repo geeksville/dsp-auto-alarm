@@ -44,5 +44,21 @@ The template "BepInEx 5 Plugin Template" was created successfully.
 
 per https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/4_configuration.html
 
+best harmony docs: https://github.com/BepInEx/HarmonyX/wiki
+
 https://github.com/icsharpcode/AvaloniaILSpy/releases
-ILSpy /home/kevinh/.nuget/packages/dysonsphereprogram.gamelibs/0.10.29.21950-r.0/lib/netstandard2.0/Assembly-CSharp.dll
+~/packages/ilspy/ILSpy /home/kevinh/.nuget/packages/dysonsphereprogram.gamelibs/0.10.29.21950-r.0/lib/netstandard2.0/Assembly-CSharp.dll
+
+@starfish says "can start with PlanetFactory.BuildFinally and related methods on the path"
+if you want, you can patch GameScenarioLogic.NotifyOnBuild to get the entityId, and from get EntityData from factory.entityPool[entityId]
+then it can test if it is turret by checking if it's EntityData.turretId > 0
+For switching alarm, check PlanetFactory.EnableEntityWarning and DisableEntityWarning
+
+logs are witten to "/home/deck/.config/r2modmanPlus-local/DysonSphereProgram/profiles/Default/BepInEx/LogOutput.log"
+
+sudo apt install sshfs
+sshfs deck@192.168.1.107:/home/deck /mnt/deck
+
+tail -f /mnt/deck/.config/r2modmanPlus-local/DysonSphereProgram/profiles/Default/BepInEx/LogOutput.log &
+
+mkdir /mnt/deck/.config/r2modmanPlus-local/DysonSphereProgram/profiles/Default/BepInEx/plugins/AutoAlarm
