@@ -39,3 +39,7 @@ Use 'dotnet --help' to see available commands or visit: https://aka.ms/dotnet-cl
 The template "BepInEx 5 Plugin Template" was created successfully.
 
 ```
+
+## developing 
+
+per https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/4_configuration.html
