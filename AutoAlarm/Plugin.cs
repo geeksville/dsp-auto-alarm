@@ -2,9 +2,12 @@
 
 namespace AutoAlarm
 {
-    [BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
+    [BepInPlugin(__NAME__, __GUID__, "1.0.0")]
     public class Plugin : BaseUnityPlugin
     {
+        public const string __NAME__ = "AutoAlarm";
+        public const string __GUID__ = "com.geeksville.dsp." + __NAME__;
+
         private void Awake()
         {
             // Plugin startup logic
