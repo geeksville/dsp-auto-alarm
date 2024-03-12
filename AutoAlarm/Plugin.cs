@@ -95,9 +95,9 @@ namespace AutoAlarm
         /// </summary>
         /// <param name="entityId">The ID of the entity that was built.</param>
         [HarmonyPostfix, HarmonyPatch(typeof(GameScenarioLogic), nameof(GameScenarioLogic.NotifyOnBuild))]
-        public static void OnBuild_PostFix(int entityId) // int planetId, int itemId, 
+        public static void OnBuild_PostFix(int entityId) // int planetId, int itemId
         {
-            logger.LogInfo($"OnBuild_PostFix {entityId}");
+            // logger.LogInfo($"OnBuild_PostFix {entityId}");
             SetAlarms(entityId);
         }
 

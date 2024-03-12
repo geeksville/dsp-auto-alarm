@@ -45,6 +45,7 @@ The template "BepInEx 5 Plugin Template" was created successfully.
 per https://docs.bepinex.dev/articles/dev_guide/plugin_tutorial/4_configuration.html
 
 best harmony docs: https://github.com/BepInEx/HarmonyX/wiki
+best DSP docs: https://dsp-wiki.com/Modding:Modding
 
 https://github.com/icsharpcode/AvaloniaILSpy/releases
 ~/packages/ilspy/ILSpy /home/kevinh/.nuget/packages/dysonsphereprogram.gamelibs/0.10.29.21950-r.0/lib/netstandard2.0/Assembly-CSharp.dll
