@@ -49,7 +49,7 @@ namespace AutoAlarm
         /// <param name="entityId">The ID of the entity to set alarms for.</param>
         private static void SetAlarms(int entityId)
         {
-            logger.LogInfo($"SetAlarms {entityId}");
+            // logger.LogInfo($"SetAlarms {entityId}");
             var planet = GameMain.localPlanet;
             if (planet == null)
             {

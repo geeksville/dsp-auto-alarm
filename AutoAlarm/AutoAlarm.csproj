@@ -21,7 +21,7 @@
     <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.2" PrivateAssets="all" />
   </ItemGroup>
   <!-- FIXME: not cross platform / disabling temporarily -->
-  <!-- <PropertyGroup>
+  <PropertyGroup>
     <PostBuildEvent>cp /home/kevinh/development/dyson-sphere-program/dsp-auto-alarm/AutoAlarm/bin/Debug/netstandard2.0/AutoAlarm.dll "/mnt/deck/.config/r2modmanPlus-local/DysonSphereProgram/profiles/Default/BepInEx/plugins/AutoAlarm"</PostBuildEvent>
-  </PropertyGroup> -->
+  </PropertyGroup> 
 </Project>
