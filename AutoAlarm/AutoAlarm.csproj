@@ -2,9 +2,10 @@
 
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
-    <AssemblyName>AutoAlarm</AssemblyName>
-    <Description>My first plugin</Description>
-    <Version>1.0.0</Version>
+    <AssemblyName>com.geeksville.dsp.AutoAlarm</AssemblyName>
+    <Product>AutoAlarm</Product>
+    <Description>A Dyson Sphere Program mod to provide sensible alarm settings</Description>
+    <Version>0.1.1</Version>
     <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
     <LangVersion>latest</LangVersion>
   </PropertyGroup>
@@ -22,6 +23,6 @@
   </ItemGroup>
   <!-- FIXME: not cross platform / disabling temporarily -->
   <PropertyGroup>
-    <PostBuildEvent>cp /home/kevinh/development/dyson-sphere-program/dsp-auto-alarm/AutoAlarm/bin/Debug/netstandard2.0/AutoAlarm.dll "/mnt/deck/.config/r2modmanPlus-local/DysonSphereProgram/profiles/Default/BepInEx/plugins/AutoAlarm"</PostBuildEvent>
+    <PostBuildEvent>cp /home/kevinh/development/dyson-sphere-program/dsp-auto-alarm/AutoAlarm/bin/Debug/netstandard2.0/com.geeksville.dsp.AutoAlarm.dll "/mnt/deck/.config/r2modmanPlus-local/DysonSphereProgram/profiles/Default/BepInEx/plugins/AutoAlarm"</PostBuildEvent>
   </PropertyGroup> 
 </Project>

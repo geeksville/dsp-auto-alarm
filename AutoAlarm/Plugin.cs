@@ -5,12 +5,9 @@ using HarmonyLib;
 
 namespace AutoAlarm
 {
-    [BepInPlugin(__NAME__, __GUID__, "0.1.0")]
+    [BepInPlugin(PluginInfo.PLUGIN_GUID, PluginInfo.PLUGIN_NAME, PluginInfo.PLUGIN_VERSION)]
     public class Plugin : BaseUnityPlugin
     {
-        public const string __NAME__ = "AutoAlarm";
-        public const string __GUID__ = "com.geeksville.dsp." + __NAME__;
-
         public static ConfigEntry<bool> autoMiners, autoAssemblers, autoTurrets, autoBABs,
         autoLabs, autoStations, autoFieldGens,
         autoConstructionModules;
